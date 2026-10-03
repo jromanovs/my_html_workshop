@@ -14,8 +14,23 @@
     <input type="text" id="cname" name="cname" value="Riga"><br><br>
     <input type="submit" value="Submit">
   </form>
+  <h2>GET samples</h2>
   <p>
     <a href="https://httpbin.org/get?fname=John&amp;lname=Doe&amp;cname=Riga">GET sample: send John, Doe and Riga in the URL</a>
   </p>
+  <p>
+    <a href="https://developer.mozilla.org/en-US/search?q=form">GET sample: search MDN for "form"</a>
+  </p>
+  <form action="https://httpbin.org/get" method="get">
+    <label for="language">Favourite language:</label><br>
+    <input type="text" id="language" name="language" value="HTML"><br><br>
+    <input type="submit" value="Send with GET">
+  </form>
+  <h2>POST sample</h2>
+  <form action="https://httpbin.org/post" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" value="john"><br><br>
+    <input type="submit" value="Send with POST">
+  </form>
 </body>
 </html>
