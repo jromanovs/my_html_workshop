@@ -29,10 +29,17 @@ Open the page in the browser:
    select, radio, checkbox, number, range, colour, textarea. Four submit
    buttons: GET, POST (`formmethod`) and two with their own address
    (`formaction`). One field stands outside the form and is attached to
-   it with the `form` attribute.
+   it with the `form` attribute. A few inline styles and a background
+   picture make it nicer to look at.
 
    <https://htmlpreview.github.io/?https://github.com/jromanovs/my_html_workshop/blob/main/time_travel_customs.html>
 
 The samples send data to <https://httpbin.org>, which returns what it
 received: GET parameters appear in the URL, POST data in the request
 body.
+
+## Credits
+
+`images/hubble_ultra_deep_field.jpg` — Hubble Ultra Deep Field, NASA and
+the European Space Agency, public domain. Source:
+<https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg>
