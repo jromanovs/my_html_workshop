@@ -2,6 +2,10 @@
 
 HTML workshop workbook: one page, `index.html`, built step by step.
 
+Open the page in the browser:
+
+<https://htmlpreview.github.io/?https://github.com/jromanovs/my_html_workshop/blob/main/index.html>
+
 ## Steps
 
 1. Simple form: text fields `fname` and `lname` with default values and
@@ -17,7 +21,3 @@ HTML workshop workbook: one page, `index.html`, built step by step.
 The samples send data to <https://httpbin.org>, which returns what it
 received: GET parameters appear in the URL, POST data in the request
 body.
-
-## Preview
-
-<https://htmlpreview.github.io/?https://github.com/jromanovs/my_html_workshop/blob/main/index.html>
