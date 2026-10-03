@@ -18,10 +18,12 @@ Open the page in the browser:
    - a search link with the parameter `q`;
    - a form with `method="get"`;
    - a form with `method="post"`.
-4. GitHub user info: a form with a username field. A form can only add
-   its fields after `?`, and the username belongs in the path, so a
-   short script builds `https://api.github.com/users/<username>` and
-   opens it. Without signing in the API answers 60 requests an hour.
+4. GitHub API: five GET requests for one user — all info, followers,
+   events, repos, gists. One form with five buttons: the first uses the
+   `action` of the form, the others set their own address with
+   `formaction`. The username is part of the address, and a form can
+   only add fields after `?`, so the name is written in the addresses.
+   Without signing in the API answers 60 requests an hour.
 
 The samples send data to <https://httpbin.org>, which returns what it
 received: GET parameters appear in the URL, POST data in the request
