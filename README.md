@@ -9,8 +9,9 @@ Open the page in the browser:
 ## Steps
 
 1. Simple form: text fields `fname` and `lname` with default values and
-   a submit button. The form is sent to `/action_page.php`, which does
-   not exist here, so submitting it shows a 404 page.
+   a submit button. The form is sent to `https://httpbin.org/get`. Sent
+   to a script that does not exist, such as `/action_page.php`, it
+   shows a 404 page.
 2. City field `cname` with the default value `Riga`.
 3. GET and POST samples:
    - a link with three parameters in the URL;
