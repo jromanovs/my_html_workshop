@@ -32,5 +32,19 @@
     <input type="text" id="username" name="username" value="john"><br><br>
     <input type="submit" value="Send with POST">
   </form>
+  <h2>GitHub user info</h2>
+  <form id="github" action="https://api.github.com/users/" method="get">
+    <label for="login">GitHub username:</label><br>
+    <input type="text" id="login" name="login" placeholder="octocat" required><br><br>
+    <button type="submit">Show user info</button>
+  </form>
+  <script>
+    // A form can only add its fields after "?"; the username belongs in
+    // the path, so the address is built here.
+    document.getElementById('github').addEventListener('submit', function (event) {
+      event.preventDefault();
+      window.location.href = this.action + encodeURIComponent(this.elements.login.value);
+    });
+  </script>
 </body>
 </html>
